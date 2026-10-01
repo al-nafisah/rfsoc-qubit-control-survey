@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" role="img">
+<title>Where the real-time control lives</title>
+<desc>Four panels. (a) QICK: one processor feeds timed queues for every channel, and the readout feeds back into it. (b) QubiC, QiController and RISC-Q as built for QEC: one core per qubit, with a result hub returning measurements to the cores. (c) FIREQ: a trigger table with no processor and no reported conditional path. (d) SQ-CARS: a fixed state machine; readout data goes by DMA to the ARM, and feedback is claimed but not demonstrated.</desc>
+<defs><marker id="head-16150F" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16150F"/></marker><marker id="head-6B6358" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6B6358"/></marker><marker id="head-9A5B00" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9A5B00"/></marker></defs>
+<rect width="1200" height="750" fill="#FFFFFF"/>
+<rect x="40" y="22" width="545" height="340" rx="4" fill="#FFFFFF" stroke="#DDD7C9" stroke-width="1.5"/>
+<text x="58" y="52" font-size="16" fill="#16150F" text-anchor="start" font-weight="bold" font-style="normal">(a) One processor, every channel</text>
+<text x="58" y="74" font-size="13" fill="#9A5B00" text-anchor="start" font-weight="normal" font-style="normal">QICK (tProcessor v1 and v2)</text>
+<rect x="60" y="104" width="110" height="150" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="115.0" y="175.10000000000002" font-size="13" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">one</text>
+<text x="115.0" y="192.00000000000003" font-size="13" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">processor</text>
+<path d="M170,121 H186" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="190" y="112" width="8" height="18" rx="1" fill="#FFFFFF" stroke="#6B6358" stroke-width="1.2"/>
+<rect x="199" y="112" width="8" height="18" rx="1" fill="#FFFFFF" stroke="#6B6358" stroke-width="1.2"/>
+<rect x="208" y="112" width="8" height="18" rx="1" fill="#FFFFFF" stroke="#6B6358" stroke-width="1.2"/>
+<path d="M218,121 H268" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="272" y="106" width="64" height="30" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="304.0" y="125.2" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">gen</text>
+<path d="M336,121 H358" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M362,106 h30 l16,15 l-16,15 h-30 z" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<text x="380" y="126" font-size="11" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">DAC</text>
+<path d="M408,121 H480" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M170,161 H186" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="190" y="152" width="8" height="18" rx="1" fill="#FFFFFF" stroke="#6B6358" stroke-width="1.2"/>
+<rect x="199" y="152" width="8" height="18" rx="1" fill="#FFFFFF" stroke="#6B6358" stroke-width="1.2"/>
+<rect x="208" y="152" width="8" height="18" rx="1" fill="#FFFFFF" stroke="#6B6358" stroke-width="1.2"/>
+<path d="M218,161 H268" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="272" y="146" width="64" height="30" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="304.0" y="165.2" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">gen</text>
+<path d="M336,161 H358" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M362,146 h30 l16,15 l-16,15 h-30 z" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<text x="380" y="166" font-size="11" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">DAC</text>
+<path d="M408,161 H480" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M170,201 H186" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="190" y="192" width="8" height="18" rx="1" fill="#FFFFFF" stroke="#6B6358" stroke-width="1.2"/>
+<rect x="199" y="192" width="8" height="18" rx="1" fill="#FFFFFF" stroke="#6B6358" stroke-width="1.2"/>
+<rect x="208" y="192" width="8" height="18" rx="1" fill="#FFFFFF" stroke="#6B6358" stroke-width="1.2"/>
+<path d="M218,201 H268" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="272" y="186" width="64" height="30" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="304.0" y="205.2" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">gen</text>
+<path d="M336,201 H358" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M362,186 h30 l16,15 l-16,15 h-30 z" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<text x="380" y="206" font-size="11" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">DAC</text>
+<path d="M408,201 H480" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M170,241 H186" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="190" y="232" width="8" height="18" rx="1" fill="#FFFFFF" stroke="#6B6358" stroke-width="1.2"/>
+<rect x="199" y="232" width="8" height="18" rx="1" fill="#FFFFFF" stroke="#6B6358" stroke-width="1.2"/>
+<rect x="208" y="232" width="8" height="18" rx="1" fill="#FFFFFF" stroke="#6B6358" stroke-width="1.2"/>
+<path d="M218,241 H268" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="272" y="226" width="64" height="30" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="304.0" y="245.2" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">gen</text>
+<path d="M336,241 H358" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M362,226 h30 l16,15 l-16,15 h-30 z" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<text x="380" y="246" font-size="11" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">DAC</text>
+<path d="M408,241 H480" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<text x="204" y="98" font-size="11" fill="#6B6358" text-anchor="middle" font-weight="normal" font-style="normal">timed queues</text>
+<rect x="484" y="98" width="70" height="240" rx="3" fill="#FFFFFF" stroke="#6B6358" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="519" y="212.0" font-size="12" fill="#6B6358" text-anchor="middle" font-weight="normal" font-style="normal">qubits</text>
+<path d="M480,307 H412" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M408,292 h-30 l-16,15 l16,15 h30 z" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<text x="390" y="312" font-size="11" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">ADC</text>
+<path d="M362,307 H340" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="262" y="292" width="76" height="30" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="300.0" y="311.2" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">readout</text>
+<path d="M262,307 H115 V258" fill="none" stroke="#9A5B00" stroke-width="2" marker-end="url(#head-9A5B00)"/>
+<text x="60" y="340" font-size="12" fill="#9A5B00" text-anchor="start" font-weight="normal" font-style="normal">the readout feeds the processor, which branches</text>
+<rect x="615" y="22" width="545" height="340" rx="4" fill="#FFFFFF" stroke="#DDD7C9" stroke-width="1.5"/>
+<text x="633" y="52" font-size="16" fill="#16150F" text-anchor="start" font-weight="bold" font-style="normal">(b) One processor per qubit</text>
+<text x="633" y="74" font-size="13" fill="#9A5B00" text-anchor="start" font-weight="normal" font-style="normal">QubiC, QiController, RISC-Q as built for QEC</text>
+<rect x="635" y="106" width="110" height="30" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="690.0" y="125.2" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">core q0</text>
+<path d="M745,121 H843" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="847" y="106" width="64" height="30" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="879.0" y="125.2" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">gen</text>
+<path d="M911,121 H933" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M937,106 h30 l16,15 l-16,15 h-30 z" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<text x="955" y="126" font-size="11" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">DAC</text>
+<path d="M983,121 H1055" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="635" y="150" width="110" height="30" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="690.0" y="169.2" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">core q1</text>
+<path d="M745,165 H843" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="847" y="150" width="64" height="30" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="879.0" y="169.2" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">gen</text>
+<path d="M911,165 H933" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M937,150 h30 l16,15 l-16,15 h-30 z" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<text x="955" y="170" font-size="11" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">DAC</text>
+<path d="M983,165 H1055" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="635" y="194" width="110" height="30" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="690.0" y="213.2" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">core q2</text>
+<path d="M745,209 H843" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="847" y="194" width="64" height="30" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="879.0" y="213.2" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">gen</text>
+<path d="M911,209 H933" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M937,194 h30 l16,15 l-16,15 h-30 z" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<text x="955" y="214" font-size="11" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">DAC</text>
+<path d="M983,209 H1055" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<text x="690" y="250" font-size="14" fill="#6B6358" text-anchor="middle" font-weight="normal" font-style="normal">...</text>
+<rect x="1059" y="98" width="70" height="240" rx="3" fill="#FFFFFF" stroke="#6B6358" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="1094" y="212.0" font-size="12" fill="#6B6358" text-anchor="middle" font-weight="normal" font-style="normal">qubits</text>
+<path d="M1055,307 H987" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M983,292 h-30 l-16,15 l16,15 h30 z" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<text x="965" y="312" font-size="11" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">ADC</text>
+<path d="M937,307 H915" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="837" y="292" width="76" height="30" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="875.0" y="311.2" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">readout</text>
+<rect x="635" y="292" width="110" height="30" rx="3" fill="#F4F1EA" stroke="#9A5B00" stroke-width="1.5"/>
+<text x="690.0" y="311.2" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">result hub</text>
+<path d="M837,307 H749" fill="none" stroke="#9A5B00" stroke-width="2" marker-end="url(#head-9A5B00)"/>
+<path d="M765,292 V121" fill="none" stroke="#9A5B00" stroke-width="2"/>
+<path d="M745,307 H765" fill="none" stroke="#9A5B00" stroke-width="2"/>
+<path d="M765,128 H749" fill="none" stroke="#9A5B00" stroke-width="2" marker-end="url(#head-9A5B00)"/>
+<path d="M765,172 H749" fill="none" stroke="#9A5B00" stroke-width="2" marker-end="url(#head-9A5B00)"/>
+<path d="M765,216 H749" fill="none" stroke="#9A5B00" stroke-width="2" marker-end="url(#head-9A5B00)"/>
+<text x="635" y="340" font-size="12" fill="#9A5B00" text-anchor="start" font-weight="normal" font-style="normal">a hub hands each core the results it waits on</text>
+<rect x="40" y="387" width="545" height="340" rx="4" fill="#FFFFFF" stroke="#DDD7C9" stroke-width="1.5"/>
+<text x="58" y="417" font-size="16" fill="#16150F" text-anchor="start" font-weight="bold" font-style="normal">(c) An event table, no processor</text>
+<text x="58" y="439" font-size="13" fill="#9A5B00" text-anchor="start" font-weight="normal" font-style="normal">FIREQ</text>
+<rect x="60" y="469" width="110" height="150" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<line x1="68" y1="486" x2="162" y2="486" stroke="#6B6358" stroke-width="1"/>
+<line x1="68" y1="503" x2="162" y2="503" stroke="#6B6358" stroke-width="1"/>
+<line x1="68" y1="520" x2="162" y2="520" stroke="#6B6358" stroke-width="1"/>
+<line x1="68" y1="537" x2="162" y2="537" stroke="#6B6358" stroke-width="1"/>
+<line x1="68" y1="554" x2="162" y2="554" stroke="#6B6358" stroke-width="1"/>
+<line x1="68" y1="571" x2="162" y2="571" stroke="#6B6358" stroke-width="1"/>
+<line x1="68" y1="588" x2="162" y2="588" stroke="#6B6358" stroke-width="1"/>
+<text x="115" y="637" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">trigger table</text>
+<path d="M170,486 H268" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="272" y="471" width="64" height="30" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="304.0" y="490.2" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">gen</text>
+<path d="M336,486 H358" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M362,471 h30 l16,15 l-16,15 h-30 z" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<text x="380" y="491" font-size="11" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">DAC</text>
+<path d="M408,486 H480" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M170,526 H268" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="272" y="511" width="64" height="30" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="304.0" y="530.2" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">gen</text>
+<path d="M336,526 H358" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M362,511 h30 l16,15 l-16,15 h-30 z" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<text x="380" y="531" font-size="11" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">DAC</text>
+<path d="M408,526 H480" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M170,566 H268" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="272" y="551" width="64" height="30" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="304.0" y="570.2" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">gen</text>
+<path d="M336,566 H358" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M362,551 h30 l16,15 l-16,15 h-30 z" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<text x="380" y="571" font-size="11" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">DAC</text>
+<path d="M408,566 H480" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M170,606 H268" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="272" y="591" width="64" height="30" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="304.0" y="610.2" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">gen</text>
+<path d="M336,606 H358" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M362,591 h30 l16,15 l-16,15 h-30 z" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<text x="380" y="611" font-size="11" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">DAC</text>
+<path d="M408,606 H480" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="484" y="463" width="70" height="240" rx="3" fill="#FFFFFF" stroke="#6B6358" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="519" y="577.0" font-size="12" fill="#6B6358" text-anchor="middle" font-weight="normal" font-style="normal">qubits</text>
+<path d="M480,672 H412" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M408,657 h-30 l-16,15 l16,15 h30 z" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<text x="390" y="677" font-size="11" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">ADC</text>
+<path d="M362,672 H340" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="262" y="657" width="76" height="30" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="300.0" y="676.2" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">readout</text>
+<path d="M262,672 H174" fill="none" stroke="#6B6358" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#head-6B6358)"/>
+<rect x="60" y="657" width="110" height="30" rx="3" fill="#FFFFFF" stroke="#6B6358" stroke-width="1.5"/>
+<text x="115.0" y="676.2" font-size="12" fill="#6B6358" text-anchor="middle" font-weight="normal" font-style="normal">to the ARM</text>
+<text x="60" y="705" font-size="12" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">no conditional path is reported</text>
+<rect x="615" y="387" width="545" height="340" rx="4" fill="#FFFFFF" stroke="#DDD7C9" stroke-width="1.5"/>
+<text x="633" y="417" font-size="16" fill="#16150F" text-anchor="start" font-weight="bold" font-style="normal">(d) A fixed state machine</text>
+<text x="633" y="439" font-size="13" fill="#9A5B00" text-anchor="start" font-weight="normal" font-style="normal">SQ-CARS</text>
+<rect x="635" y="469" width="110" height="150" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="690.0" y="531.65" font-size="13" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">state</text>
+<text x="690.0" y="548.55" font-size="13" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">machine,</text>
+<text x="690.0" y="565.4499999999999" font-size="13" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">fixed loops</text>
+<path d="M745,486 H843" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="847" y="471" width="64" height="30" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="879.0" y="490.2" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">gen</text>
+<path d="M911,486 H933" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M937,471 h30 l16,15 l-16,15 h-30 z" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<text x="955" y="491" font-size="11" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">DAC</text>
+<path d="M983,486 H1055" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M745,526 H843" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="847" y="511" width="64" height="30" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="879.0" y="530.2" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">gen</text>
+<path d="M911,526 H933" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M937,511 h30 l16,15 l-16,15 h-30 z" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<text x="955" y="531" font-size="11" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">DAC</text>
+<path d="M983,526 H1055" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M745,566 H843" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="847" y="551" width="64" height="30" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="879.0" y="570.2" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">gen</text>
+<path d="M911,566 H933" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M937,551 h30 l16,15 l-16,15 h-30 z" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<text x="955" y="571" font-size="11" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">DAC</text>
+<path d="M983,566 H1055" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M745,606 H843" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="847" y="591" width="64" height="30" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="879.0" y="610.2" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">gen</text>
+<path d="M911,606 H933" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M937,591 h30 l16,15 l-16,15 h-30 z" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<text x="955" y="611" font-size="11" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">DAC</text>
+<path d="M983,606 H1055" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="1059" y="463" width="70" height="240" rx="3" fill="#FFFFFF" stroke="#6B6358" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="1094" y="577.0" font-size="12" fill="#6B6358" text-anchor="middle" font-weight="normal" font-style="normal">qubits</text>
+<path d="M1055,672 H987" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<path d="M983,657 h-30 l-16,15 l16,15 h30 z" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<text x="965" y="677" font-size="11" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">ADC</text>
+<path d="M937,672 H915" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="837" y="657" width="76" height="30" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="875.0" y="676.2" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">readout</text>
+<path d="M837,672 H749" fill="none" stroke="#6B6358" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#head-6B6358)"/>
+<rect x="635" y="657" width="110" height="30" rx="3" fill="#FFFFFF" stroke="#6B6358" stroke-width="1.5"/>
+<text x="690.0" y="676.2" font-size="12" fill="#6B6358" text-anchor="middle" font-weight="normal" font-style="normal">DMA to ARM</text>
+<text x="635" y="705" font-size="12" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">feedback is claimed, not demonstrated</text>
+</svg>

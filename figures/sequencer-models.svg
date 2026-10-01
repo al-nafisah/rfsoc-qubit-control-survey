@@ -214,5 +214,5 @@
 <rect x="635" y="755" width="110" height="30" rx="3" fill="#FFFFFF" stroke="#6B6358" stroke-width="1.5"/>
 <text x="690.0" y="774.2" font-size="12" fill="#6B6358" text-anchor="middle" font-weight="normal" font-style="normal">DMA to ARM</text>
 <text x="635" y="803" font-size="12" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">feedback is claimed, not demonstrated</text>
-<text x="40" y="860.0" font-size="13" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">Common to all six: ARM cores on the same chip run Linux (PYNQ on five of them) and talk to a host PC.</text>
+<text x="40" y="860" font-size="13" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">Common to all six: ARM cores on the same chip run Linux (PYNQ on five of them) and talk to a host PC.</text>
 </svg>

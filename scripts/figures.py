@@ -129,20 +129,23 @@ def readout_in(s, ox, y):
     return ox + 222
 
 
-def figure_sequencers():
-    W, H = 1200, 890
+def figure_sequencers(bare=False):
+    """bare: the four panels alone at 16:10, for the website's project plate."""
+    W, H = (1200, 750) if bare else (1200, 890)
     s = Svg(W, H)
-    s.text(40, 48, "Where the real-time control lives", 24, INK, weight="bold")
-    s.lines(
+    top = 22 if bare else 120
+    if not bare:
+      s.text(40, 48, "Where the real-time control lives", 24, INK, weight="bold")
+      s.lines(
         40, 76,
         [
             "Six open RFSoC qubit controllers, four ways of deciding what plays when. Boxes are roles,",
             "not floorplans; each panel is drawn from the papers cited in the README.",
         ],
         14, MUTED,
-    )
+      )
     pw, ph = 545, 340
-    origins = [(40, 120), (615, 120), (40, 485), (615, 485)]
+    origins = [(40, top), (615, top), (40, top + 365), (615, top + 365)]
 
     # (a) one processor for every channel
     ox, oy = origins[0]
@@ -214,15 +217,14 @@ def figure_sequencers():
     s.box(ox + 20, yr, 110, 30, ["DMA to ARM"], 12, fill=PAPER, stroke=MUTED, color=MUTED)
     s.text(ox + 20, oy + 318, "feedback is claimed, not demonstrated", 12, MUTED)
 
-    s.lines(
-        40, 860,
-        [
+    if not bare:
+        s.text(
+            40, 860,
             "Common to all six: ARM cores on the same chip run Linux (PYNQ on five of them) and talk to a host PC.",
-        ],
-        13, MUTED,
-    )
+            13, MUTED,
+        )
     s.save(
-        "sequencer-models.svg",
+        "sequencer-models-plate.svg" if bare else "sequencer-models.svg",
         "Where the real-time control lives",
         "Four panels. (a) QICK: one processor feeds timed queues for every channel, and the readout feeds "
         "back into it. (b) QubiC, QiController and RISC-Q as built for QEC: one core per qubit, with a "
@@ -423,6 +425,7 @@ def figure_feedback():
 
 if __name__ == "__main__":
     figure_sequencers()
+    figure_sequencers(bare=True)
     figure_openness()
     figure_feedback()
     for name in sorted(OUT.glob("*.svg")):
