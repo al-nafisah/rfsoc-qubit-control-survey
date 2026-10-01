@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" role="img">
+<title>What each feedback-latency number counts</title>
+<desc>Six stages of a feedback loop, A readout integration, B ADC and readout DSP, C state decision, D branch in the sequencer, E pulse out and DAC, F cables and fridge, against seven published numbers. None counts the readout integration. QICK 184 to 211 ns counts B to E. QubiC 150 ns counts B to E and does not say about F. A third-party QubiC measurement, 205 ns, counts B to E. QiController 428 ns counts B to E. SQ-CARS 250 ns counts only B and E, with no decision. RISC-Q 446 ns counts the branch and adds a decoder, with B, C and E not stated. FIREQ reports none.</desc>
+<defs><marker id="head-16150F" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16150F"/></marker><marker id="head-6B6358" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6B6358"/></marker><marker id="head-9A5B00" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9A5B00"/></marker></defs>
+<rect width="1200" height="860" fill="#FFFFFF"/>
+<text x="40" y="48" font-size="24" fill="#16150F" text-anchor="start" font-weight="bold" font-style="normal">What each feedback-latency number counts</text>
+<text x="40" y="76.0" font-size="14" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">A measurement-conditioned pulse passes through six stages. Each published number covers a</text>
+<text x="40" y="94.2" font-size="14" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">different subset, so they cannot be ranked against one another.</text>
+<rect x="474" y="120" width="104" height="92" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="526.0" y="148" font-size="20" fill="#9A5B00" text-anchor="middle" font-weight="bold" font-style="normal">A</text>
+<text x="526.0" y="174.0" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">readout</text>
+<text x="526.0" y="189.6" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">integration</text>
+<path d="M578,166 H585" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="586" y="120" width="104" height="92" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="638.0" y="148" font-size="20" fill="#9A5B00" text-anchor="middle" font-weight="bold" font-style="normal">B</text>
+<text x="638.0" y="174.0" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">ADC and</text>
+<text x="638.0" y="189.6" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">readout DSP</text>
+<path d="M690,166 H697" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="698" y="120" width="104" height="92" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="750.0" y="148" font-size="20" fill="#9A5B00" text-anchor="middle" font-weight="bold" font-style="normal">C</text>
+<text x="750.0" y="174.0" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">state</text>
+<text x="750.0" y="189.6" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">decision</text>
+<path d="M802,166 H809" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="810" y="120" width="104" height="92" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="862.0" y="148" font-size="20" fill="#9A5B00" text-anchor="middle" font-weight="bold" font-style="normal">D</text>
+<text x="862.0" y="174.0" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">branch in</text>
+<text x="862.0" y="189.6" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">sequencer</text>
+<path d="M914,166 H921" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="922" y="120" width="104" height="92" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="974.0" y="148" font-size="20" fill="#9A5B00" text-anchor="middle" font-weight="bold" font-style="normal">E</text>
+<text x="974.0" y="174.0" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">pulse out</text>
+<text x="974.0" y="189.6" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">and DAC</text>
+<path d="M1026,166 H1033" fill="none" stroke="#16150F" stroke-width="1.5" marker-end="url(#head-16150F)"/>
+<rect x="1034" y="120" width="104" height="92" rx="3" fill="#F4F1EA" stroke="#16150F" stroke-width="1.5"/>
+<text x="1086.0" y="148" font-size="20" fill="#9A5B00" text-anchor="middle" font-weight="bold" font-style="normal">F</text>
+<text x="1086.0" y="174.0" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">cables and</text>
+<text x="1086.0" y="189.6" font-size="12" fill="#16150F" text-anchor="middle" font-weight="normal" font-style="normal">fridge</text>
+<path d="M1138,200 h14 V232 H460 V200 h12" fill="none" stroke="#6B6358" stroke-width="1.2" stroke-dasharray="5 4" marker-end="url(#head-6B6358)"/>
+<text x="450" y="252" font-size="12" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">the next pulse reaches the qubit</text>
+<text x="40" y="142.0" font-size="13" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">Stages</text>
+<text x="40" y="161.5" font-size="13" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">A: the measurement itself</text>
+<text x="40" y="181.0" font-size="13" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">B to E: the controller</text>
+<text x="40" y="200.5" font-size="13" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">F: the wiring</text>
+<line x1="40" y1="278" x2="1160" y2="278" stroke="#DDD7C9" stroke-width="1"/>
+<text x="40" y="300" font-size="15" fill="#16150F" text-anchor="start" font-weight="bold" font-style="normal">QICK, tProc v1, ZCU111</text>
+<text x="40" y="321" font-size="12" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">184 to 211 ns  (Stefanazzi 2022, Table II)</text>
+<circle cx="526.0" cy="304" r="9" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<circle cx="638.0" cy="304" r="9" fill="#9A5B00" stroke="#9A5B00" stroke-width="1.5"/>
+<circle cx="750.0" cy="304" r="9" fill="#9A5B00" stroke="#9A5B00" stroke-width="1.5"/>
+<circle cx="862.0" cy="304" r="9" fill="#9A5B00" stroke="#9A5B00" stroke-width="1.5"/>
+<circle cx="974.0" cy="304" r="9" fill="#9A5B00" stroke="#9A5B00" stroke-width="1.5"/>
+<circle cx="1086.0" cy="304" r="9" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<line x1="40" y1="340" x2="1160" y2="340" stroke="#DDD7C9" stroke-width="1"/>
+<text x="40" y="362" font-size="15" fill="#16150F" text-anchor="start" font-weight="bold" font-style="normal">QubiC 2.0</text>
+<text x="40" y="383" font-size="12" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">150 ns, total less readout  (Hashim 2025, App. C)</text>
+<circle cx="526.0" cy="366" r="9" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<circle cx="638.0" cy="366" r="9" fill="#9A5B00" stroke="#9A5B00" stroke-width="1.5"/>
+<circle cx="750.0" cy="366" r="9" fill="#9A5B00" stroke="#9A5B00" stroke-width="1.5"/>
+<circle cx="862.0" cy="366" r="9" fill="#9A5B00" stroke="#9A5B00" stroke-width="1.5"/>
+<circle cx="974.0" cy="366" r="9" fill="#9A5B00" stroke="#9A5B00" stroke-width="1.5"/>
+<text x="1086.0" y="372" font-size="17" fill="#6B6358" text-anchor="middle" font-weight="normal" font-style="normal">?</text>
+<line x1="40" y1="402" x2="1160" y2="402" stroke="#DDD7C9" stroke-width="1"/>
+<text x="40" y="424" font-size="15" fill="#16150F" text-anchor="start" font-weight="bold" font-style="normal">QubiC, third-party</text>
+<text x="40" y="445" font-size="12" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">205 ns, one branch  (Giortamis 2026, Table II)</text>
+<circle cx="526.0" cy="428" r="9" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<circle cx="638.0" cy="428" r="9" fill="#9A5B00" stroke="#9A5B00" stroke-width="1.5"/>
+<circle cx="750.0" cy="428" r="9" fill="#9A5B00" stroke="#9A5B00" stroke-width="1.5"/>
+<circle cx="862.0" cy="428" r="9" fill="#9A5B00" stroke="#9A5B00" stroke-width="1.5"/>
+<circle cx="974.0" cy="428" r="9" fill="#9A5B00" stroke="#9A5B00" stroke-width="1.5"/>
+<text x="1086.0" y="434" font-size="17" fill="#6B6358" text-anchor="middle" font-weight="normal" font-style="normal">?</text>
+<line x1="40" y1="464" x2="1160" y2="464" stroke="#DDD7C9" stroke-width="1"/>
+<text x="40" y="486" font-size="15" fill="#16150F" text-anchor="start" font-weight="bold" font-style="normal">QiController, ZCU111</text>
+<text x="40" y="507" font-size="12" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">428 ns  (Gebauer 2020)</text>
+<circle cx="526.0" cy="490" r="9" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<circle cx="638.0" cy="490" r="9" fill="#9A5B00" stroke="#9A5B00" stroke-width="1.5"/>
+<circle cx="750.0" cy="490" r="9" fill="#9A5B00" stroke="#9A5B00" stroke-width="1.5"/>
+<circle cx="862.0" cy="490" r="9" fill="#9A5B00" stroke="#9A5B00" stroke-width="1.5"/>
+<circle cx="974.0" cy="490" r="9" fill="#9A5B00" stroke="#9A5B00" stroke-width="1.5"/>
+<circle cx="1086.0" cy="490" r="9" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<line x1="40" y1="526" x2="1160" y2="526" stroke="#DDD7C9" stroke-width="1"/>
+<text x="40" y="548" font-size="15" fill="#16150F" text-anchor="start" font-weight="bold" font-style="normal">SQ-CARS, loopback only</text>
+<text x="40" y="569" font-size="12" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">250 ns, no decision  (Singhal 2023, Sec. III)</text>
+<circle cx="526.0" cy="552" r="9" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<circle cx="638.0" cy="552" r="9" fill="#9A5B00" stroke="#9A5B00" stroke-width="1.5"/>
+<circle cx="750.0" cy="552" r="9" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<circle cx="862.0" cy="552" r="9" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<circle cx="974.0" cy="552" r="9" fill="#9A5B00" stroke="#9A5B00" stroke-width="1.5"/>
+<circle cx="1086.0" cy="552" r="9" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<line x1="40" y1="588" x2="1160" y2="588" stroke="#DDD7C9" stroke-width="1"/>
+<text x="40" y="610" font-size="15" fill="#16150F" text-anchor="start" font-weight="bold" font-style="normal">RISC-Q, 3 boards</text>
+<text x="40" y="631" font-size="12" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">446 ns, adds a decoder  (Liu 2026, Fig. 8)</text>
+<circle cx="526.0" cy="614" r="9" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<text x="638.0" y="620" font-size="17" fill="#6B6358" text-anchor="middle" font-weight="normal" font-style="normal">?</text>
+<text x="750.0" y="620" font-size="17" fill="#6B6358" text-anchor="middle" font-weight="normal" font-style="normal">?</text>
+<circle cx="862.0" cy="614" r="9" fill="#9A5B00" stroke="#9A5B00" stroke-width="1.5"/>
+<text x="974.0" y="620" font-size="17" fill="#6B6358" text-anchor="middle" font-weight="normal" font-style="normal">?</text>
+<circle cx="1086.0" cy="614" r="9" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<line x1="40" y1="650" x2="1160" y2="650" stroke="#DDD7C9" stroke-width="1"/>
+<text x="40" y="672" font-size="15" fill="#16150F" text-anchor="start" font-weight="bold" font-style="normal">FIREQ</text>
+<text x="40" y="693" font-size="12" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">not reported  (La Capra 2026)</text>
+<text x="806" y="680" font-size="13" fill="#6B6358" text-anchor="middle" font-weight="normal" font-style="italic">no feedback latency reported</text>
+<line x1="40" y1="712" x2="1160" y2="712" stroke="#DDD7C9" stroke-width="1"/>
+<circle cx="50" cy="738" r="9" fill="#9A5B00" stroke="#9A5B00" stroke-width="1.5"/>
+<text x="66" y="743" font-size="13" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">counted</text>
+<circle cx="160" cy="738" r="9" fill="#FFFFFF" stroke="#16150F" stroke-width="1.5"/>
+<text x="176" y="743" font-size="13" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">not counted</text>
+<text x="300" y="744" font-size="17" fill="#6B6358" text-anchor="middle" font-weight="normal" font-style="normal">?</text>
+<text x="316" y="743" font-size="13" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">the source does not say</text>
+<text x="40" y="780.0" font-size="13" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">Loopback measurements (QICK, SQ-CARS, RISC-Q) run a short cable from DAC to ADC in place of fridge wiring.</text>
+<text x="40" y="800.15" font-size="13" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">RISC-Q's number is decoding feedback for a distance-3 surface code across three boards, two network hops included.</text>
+<text x="40" y="820.3" font-size="13" fill="#6B6358" text-anchor="start" font-weight="normal" font-style="normal">Each row is the source's own definition; the README gives the wording.</text>
+</svg>
