@@ -1,0 +1,35 @@
+key	figure	shows
+stefanazzi2022qick	7	QICK firmware: tProcessor, signal generators and readouts on the ZCU111
+stefanazzi2022qick	8	QICK tProcessor v1: timed instructions queued per channel against a master clock
+stefanazzi2022qick	9	QICK signal generator: envelope table, DDS, gain
+stefanazzi2022qick	10	QICK readout: DDS down-conversion, FIR, decimation, averaging, feedback port
+ding2024qick	1	QICK on the ZCU216: the mixer-free control loop
+ding2024qick	2	QICK multiplexed signal generator
+ding2024qick	3	QICK polyphase-filter-bank multiplexed readout
+martin2026xcom	1	QICK XCOM: full-mesh LVDS topology between boards
+martin2026xcom	4	QICK XCOM: multi-board firmware block diagram
+carobene2025qibosoq	1	Qibosoq: the stack from Qibo down to the QICK firmware
+xu2023qubic2	1	QubiC 2.0: the LBNL analog front-end board on the ZCU216
+xu2023qubic2	2	QubiC 2.0: gateware block diagram
+xu2023qubic2	3	QubiC 2.0: the distributed processor
+xu2023qubic2	4	QubiC 2.0: software stack
+fruitwala2024distributed	1	QubiC distributed processor: block diagram with the FPROC
+fruitwala2024distributed	2	QubiC processor core microarchitecture
+fruitwala2024distributed	7	QubiC per-qubit signal path
+xu2025multifpga	1	QubiC multi-board: ring synchronization topology
+xu2025multifpga	2	QubiC multi-board: Aurora data link
+vora2024qubicml	7	QubiCML: signal chain from DAC to state prediction
+lacapra2026fireq	3	FIREQ: firmware peripherals and the client-server stack
+lacapra2026fireq	4	FIREQ: sequencing by wave-definition words
+liu2025riscq	1	RISC-Q: the generated quantum-control system-on-chip
+liu2025riscq	3	RISC-Q: measurement dataflow with timed FIFOs
+liu2026qec	2	RISC-Q QEC system: 14-qubit channel map on one ZCU216
+liu2026qec	6	RISC-Q QEC system: three boards in QubiC chassis
+liu2026qec	8	RISC-Q QEC system: decoding-feedback latency by stage
+singhal2023sqcars	1	SQ-CARS: system architecture
+singhal2023sqcars	3	SQ-CARS: arbitrary waveform generator block
+singhal2023sqcars	4	SQ-CARS: second-Nyquist up-conversion with the RF-DAC
+gebauer2020fluxonium	1	QiController: the setup behind its 428 ns feedback
+shammah2024openhw	4	QubiC 1.0 and 2.0 hardware
+shammah2024openhw	5	QICK boards
+salathe2018latency	1	A feedback loop and its latency budget

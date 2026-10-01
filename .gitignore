@@ -1,0 +1,18 @@
+# The papers themselves. Most arXiv preprints grant arXiv alone the right to
+# distribute them, so the library is rebuilt locally by scripts/fetch_papers.py
+# and never committed.
+papers/
+
+# Figures pulled out of those papers while reading. Only a CC BY figure may be
+# copied into figures/reused/, with its credit; everything else stays here.
+extracted/
+
+__pycache__/
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
